@@ -54,21 +54,21 @@ function disconnect() {
 };
 
 function makeMove(Id) {
-    switch (websocket) {
-    case undefined:
-        restMove(Id);
-        break;
-    default:
-        wsMove(Id);
-        break;
-    };
+    if ($("#"+Id).html() == "") {
+        switch (websocket) {
+        case undefined:
+            restMove(Id);
+            break;
+        default:
+            wsMove(Id);
+            break;
+        };
+    }
 };
 
 function wsMove(Id) {
     if(websocket.readyState == websocket.OPEN){
-        if ($("#"+Id).html() == "") {
-            websocket.send(payload(Id, gameboard));
-        }
+        websocket.send(payload(Id, gameboard));
     } else {
         showMessage('websocket is not connected');
     };
