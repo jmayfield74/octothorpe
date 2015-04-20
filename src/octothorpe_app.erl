@@ -26,7 +26,7 @@ start_webserver() ->
     {ok, _} = cowboy:start_http(
                 http,
                 100,
-                [{port, 8880}],
+                [{port, 80}],
                 [
                  {env, [{dispatch, Dispatch}]}
                 ]).
