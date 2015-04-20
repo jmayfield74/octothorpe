@@ -1,2 +1,2 @@
-web: erl -pa ../octothorpe/ebin ../octothorpe/deps/*/ebin -noshell -noinput -octothorpe port $PORT -s octothorpe
+web: erl -pa ../octo-thorpe/ebin ../octo-thorpe/deps/*/ebin -noshell -noinput -octothorpe port $PORT -s octothorpe
 
