@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Octothorpe</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/js/octo.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/css/octo.css">
+        <script>
+            $(document).ready(init_rest);
+        </script>
+    </head>
+    <body>
+
+        <div id="header">
+            <div id="title">Octothorpe</div>
+            <div style="position: absolute; right: 10px;">...websockety tic-tac-toe because "web2.0"</div>
+        </div>
+
+        <div id="board" class="board">
+            <div class="row_1 col_1">
+                <div id="pos_1"></div>
+            </div>
+            <div class="row_1 col_2">
+                <div id="pos_2"></div>
+            </div>
+            <div class="row_1 col_3">
+                <div id="pos_3"></div>
+            </div>
+            <div class="row_2 col_1">
+                <div id="pos_4"></div>
+            </div>
+            <div class="row_2 col_2">
+                <div id="pos_5"></div>
+            </div>
+            <div class="row_2 col_3">
+                <div id="pos_6"></div>
+            </div>
+            <div class="row_3 col_1">
+                <div id="pos_7"></div>
+            </div>
+            <div class="row_3 col_2">
+                <div id="pos_8"></div>
+            </div>
+            <div class="row_3 col_3">
+                <div id="pos_9"></div>
+            </div>
+        </div>
+
+        <div id="controls" class="controls">
+            <div id="message"></div>
+            <div ><input id="startover" type="button" onclick="startOver();" value="play again"/></div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,106 @@
+
+html {
+    background: #111;
+    min-height: 100%;
+    color: #00b300;
+}
+
+.board {
+
+    position: fixed; 
+    width: 452px;
+    height: 450px;
+    z-index: 2;
+    top: 75px;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -226px;
+    background-color: #00b300;
+}
+.board div {
+    font-size: 122pt;
+    text-align: center;
+    line-height: 100px;
+    width: 148px;
+    height: 148px;
+    background: #111;
+}
+.row_1 {
+    float: left;
+    margin-bottom: 2px;
+}
+.row_2 {
+    float: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.row_3 {
+    float: left;
+    margin-top: 2px;
+}
+.col_1 {
+    margin-right: 2px;
+}
+.col_2 {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.col_3 {
+    margin-left: 2px;
+}
+
+.off {
+    color: #003000;
+}
+
+.win {
+}
+
+#header {
+    padding: 3px;
+    width: 100%;
+    height: 30px;
+    background: #002200;
+    font-size: 14pt;
+}
+
+#header div {
+    float: left;
+}
+
+#title {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.controls {
+    position: fixed; 
+    width: 452px;
+    height: 110px;
+    z-index: -1;
+    bottom: 5px;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -226px;
+}
+
+.controls div {
+    text-align: center;
+    font-size: 36pt;
+    width: 100%;
+}
+.controls input {
+    background: #005500;
+    border-width: 0px;
+    border-color: #000;
+    width: 100%;
+    padding: 3px;
+    color: #000;
+    border-radius: 2px;
+    font-size: 24pt;
+}
+
+.over {
+    z-index: 12;
+    background-color: rgba(0, 25, 0, 0.9);
+}
