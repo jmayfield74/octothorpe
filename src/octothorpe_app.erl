@@ -23,10 +23,11 @@ start_webserver() ->
                          {"/ws", octothorpe_ws, []}
                         ]}
                  ]),
+    {ok, Port} = application:get_env(octothorpe, port),
     {ok, _} = cowboy:start_http(
                 http,
                 100,
-                [{port, 8080}],
+                [{port, Port}],
                 [
                  {env, [{dispatch, Dispatch}]}
                 ]).
