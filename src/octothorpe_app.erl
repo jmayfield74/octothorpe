@@ -15,10 +15,9 @@ start_webserver() ->
     Dispatch = cowboy_router:compile(
                  [
                   {'_', [
-                         {"/", cowboy_static, {priv_file, octothorpe, "index.html"}},
-                         {"/alt", cowboy_static, {priv_file, octothorpe, "index_ws.html"}},
-                         {"/static/[...]", cowboy_static, {priv_dir, octothorpe, "static",
-                                                    [{mimetypes, cow_mimetypes, all}]}},
+                         {"/", cowboy_static, {file, "./priv/index.html"}},
+                         {"/alt", cowboy_static, {file, "./priv/index_ws.html"}},
+                         {"/static/[...]", cowboy_static, {dir, "./priv/static"}},
                          {"/rest/play", octothorpe_rest, []},
                          {"/ws", octothorpe_ws, []}
                         ]}
