@@ -9,6 +9,7 @@
 -type marker() :: x | o | undefined.
 -type win_type() :: integer(1..8).
 -type board() :: {marker(), marker(), marker(),
+                  marker(), marker(), marker(),
                   marker(), marker(), marker()}.
 -type rowcol() :: 1 | 2 | 3.
 -type position() :: {rowcol(), rowcol()}.
